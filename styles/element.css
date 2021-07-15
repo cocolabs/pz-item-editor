@@ -1,0 +1,87 @@
+.logo {
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-size: contain;
+    background-image: url("../images/Spiffo_rummage.png");
+}
+.logo-text {
+    top: 16px;
+    left: 100px;
+    position: absolute;
+    color: white;
+    font-size: 54px;
+    font-weight: 100;
+    font-family: "Roboto";
+    user-select: none;
+    pointer-events: none;
+}
+
+.workspace-path-bar {
+    left: 300px;
+    width: calc(100% - 300px);
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+}
+.workspace-path-bar-wrap {
+    font-size: 14px;
+    line-height: 100%;
+    padding-bottom: 5px;
+    user-select: none;
+}
+#workspace-path-browser {
+    width: 100%;
+    user-select: none;
+}
+
+/* File Browser Inner */
+.file-browser .file {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    user-select: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.file-browser .file:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.file-browser .file:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.file-browser .file.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.file-browser .file.option {
+    font-weight: bold;
+    background-color: rgba(66, 27, 0, 0.2);
+}
+
+/* Items Browser Inner */
+.items-browser .item {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    user-select: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.items-browser .item img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.items-browser .item:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.items-browser .item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.items-browser .item.option {
+    font-weight: bold;
+    background-color: rgba(66, 27, 0, 0.2);
+}

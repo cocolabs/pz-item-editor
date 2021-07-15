@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/element.css">
+    <link rel="stylesheet" href="styles/popup.css">
+    <title>PZ - Item & Recipe Editor</title>
+  </head>
+  <body>
+    
+    <div class="popup-overlay"></div>
+
+    <div class="popup createNewFile">
+      <h1></h1>
+      <input type="text" id="createNewFileInput">
+      <div class="controls">
+        <button class="ok"></button>
+        <button class="cancel"></button>
+      </div>
+    </div>
+
+    <div class="layout">
+
+      <div class="topbar">
+        <div class="logo"></div>
+        <div class="logo-text">PZ <strong>IRE</strong></div>
+
+        <div class="workspace-path-bar">
+          <div class="workspace-path-bar-wrap">Media directory Path:</div>
+          <input type="text" id="workspace-path-browser" placeholder="Copy/Paste the media directory here." tabindex="-1">
+        </div>
+      </div>
+
+      <div class="menu">
+
+        <div class="file-browser">
+          <div id="createNewFile" class="file option">+ Create new file</div>
+
+          <div class="files"></div>
+        </div>
+
+        <div class="items-browser">
+          <div id="createNewItem" class="item option">+ Create new item</div>
+          <div id="createNewRecipe" class="item option">+ Create new recipe</div>
+          
+          <div class="items"></div>
+        </div>
+
+      </div>
+
+      <div class="content">
+
+      </div>
+
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>

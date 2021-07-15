@@ -1,0 +1,25 @@
+{
+  "name": "pz-items-recipes-editor",
+  "version": "1.0.0",
+  "description": "Tool to edit Items & Recipes text files for Project Zomboid mods.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-packager ./ --overwrite"
+  },
+  "repository": "https://github.com/cocolabs/pz-item-editor",
+  "keywords": [
+    "Project Zomboid",
+    "Item Editor",
+    "Recipe Editor"
+  ],
+  "author": "Konijima",
+  "license": "Open Source",
+  "devDependencies": {
+    "electron": "^13.1.5",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
